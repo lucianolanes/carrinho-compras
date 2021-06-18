@@ -15,16 +15,19 @@
 
   <body>
     <header>
-      <i class="fab fa-opencart"></i>
-      <h1> Projeto Shopping Cart</h1>
+      <div class="container-header">
+        <h1> <i class="fab fa-opencart"></i> Projeto Shopping Cart</h1>
+      </div>
+      <div class="container-header">
+        <input type='text' id='searchField'></input>
+        <button id='searchBtn'class="empty-cart"><i class="fas fa-search"></i></button>
+      </div>
     </header>
-    <input type='text' id='searchField'></input>
-    <button id='searchBtn'>Pesquisar</button>
     <section class="container">
       <section class="items"></section>
       <section class="cart">
         <span class="cart__title">Carrinho de compras</span>
-          <button class="empty-cart">Esvaziar carrinho</button>
+          <button class="empty-cart" id='empty-cart'>Esvaziar carrinho</button>
         <ol class="cart__items"></ol>
         <p> Preço Total: $<span class='total-price'></span></p>
       </section>
