@@ -60,6 +60,7 @@ body {
 .item .item__image {
   width: 100%;
   border-radius: 20px;
+  height: 210px;
 }
 
 .item .item__add {
